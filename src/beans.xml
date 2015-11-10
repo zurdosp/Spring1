@@ -7,8 +7,8 @@
     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context-3.2.xsd"
-    default-destroy-method="defaultDestroy" 
-    default-init-method="defaultInit">
+    default-init-method="defaultInit"
+    default-destroy-method="defaultDestroy">
 
 	<bean id="person" 
 		class="br.com.springframework.test.Person" 
