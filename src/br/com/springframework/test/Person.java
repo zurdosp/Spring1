@@ -90,11 +90,11 @@ public class Person implements BeanNameAware,
 	}	
 
 	public void defaultInit() throws Exception {
-		System.out.println(++countSteps + "- default-init or initPerson: Initializing bean: " + beanName + " Default called to initialize Bean.");
+		System.out.println(++countSteps + "- Init a Person: default-init, Initializing bean: " + beanName + " Default called to initialize Bean.");
 	}	
 	
 	public void initPerson() {
-		System.out.println(++countSteps + " - initPerson: init a Person ou default-init");
+		System.out.println(++countSteps + " - Init a Person: initPerson, init a Person by init-method method in Bean by  default-init-method");
 	}	
 	
 	@PostConstruct	   
@@ -104,7 +104,7 @@ public class Person implements BeanNameAware,
 
 	@PreDestroy
 	public void cleanUp() throws Exception {
-		System.out.println(++countSteps + " @PreDestroy: Spring Clean Up! Employee is cleaned up now.");
+		System.out.println(++countSteps + " @PreDestroy: Spring Clean Up! " + name +" is cleaned up now. (named via beans.xml)");
 	}
 	
 	public String getName() {
