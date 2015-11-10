@@ -94,7 +94,7 @@ public class Person implements BeanNameAware,
 	}	
 	
 	public void initPerson() {
-		System.out.println(++countSteps + " - init-method: init a Person");
+		System.out.println(++countSteps + " - initPerson: init a Person");
 	}	
 	
 	@PostConstruct	   
