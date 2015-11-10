@@ -90,11 +90,11 @@ public class Person implements BeanNameAware,
 	}	
 
 	public void defaultInit() throws Exception {
-		System.out.println(++countSteps + "- default-init: Initializing bean: " + beanName + " Default called to initialize Bean.");
+		System.out.println(++countSteps + "- default-init or initPerson: Initializing bean: " + beanName + " Default called to initialize Bean.");
 	}	
 	
 	public void initPerson() {
-		System.out.println(++countSteps + " - initPerson: init a Person");
+		System.out.println(++countSteps + " - initPerson: init a Person ou default-init");
 	}	
 	
 	@PostConstruct	   
